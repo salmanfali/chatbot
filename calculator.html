@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is JS Calculator using JS Function</title>
+</head>
+<body>
+    <script>
+    
+      function doCalculate()
+      {
+        console.log("Your are in function");
+
+        let num1 = document.getElementById("Num1").value;
+        let num2 = document.getElementById("Num2").value;
+        let result = 0;
+        result = Number(num1) + Number(num2);
+        document.getElementById("div1").innerHTML = result;
+        let ntext = `${result} is the result`;
+        alert(ntext);
+
+      }
+    </script>
+
+ <form id="form1" onsubmit="doCalculate(); return false">
+     Enter 1st Number <input id="Num1" title="Enter Number 1 "> <br/>
+     Enter 2nd Number <input id="Num2" title="Enter Number 2"> <br/>
+     Result is  : <div id="div1"> </div> <br/>
+     <button id="button1" type="submit"> Press to Submit </button>
+</form>
+
+<div>
+
+</div>
+</body>
+</html>

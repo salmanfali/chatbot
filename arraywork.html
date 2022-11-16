@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Work</title>
+    
+</head>
+<body>
+<p>
+  Sort an Array
+  - Ascending
+  - Descending
+  - Print Orginal Array
+  - Print Ascending
+  - Print Descending
+  <p id="p1"></p>
+ 
+</p>    
+<script>
+   let arrayOriginal = [1,2,3,5,4,6,7,8,9,0];
+   console.log(arrayOriginal);
+   let ascArray  = [1,2,3,5,4,6,7,8,9,0];
+   let dscArray = [1,2,3,5,4,6,7,8,9,0];
+   ascArray.sort(function(a, b){return a - b});
+   dscArray.sort(function(a, b){return b - a});
+
+   document.getElementById("p1").innerHTML = arrayOriginal + '<br/>'; 
+   document.getElementById("p1").innerHTML += ascArray  + '<br/>'; 
+   document.getElementById("p1").innerHTML += dscArray  + '<br/>';
+   
+
+</script>
+</body>
+</html>
